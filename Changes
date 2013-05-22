@@ -1,5 +1,16 @@
 Revision history for ACL::Lite
 
+0.0002 Wed May 22 15:57:12 2013 CEST
+
+    [BUG FIXES]
+
+    * Execute POD tests only during release testing.
+
+    [ENHANCEMENTS]
+
+    * Add permissions method to retrieve list or hash reference of
+      permissions.
+
 0.0001 Thu Sep 15 22:29:36 2011 CEST
        
     * Initial release.
