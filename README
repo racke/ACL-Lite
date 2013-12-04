@@ -2,7 +2,7 @@ NAME
     ACL::Lite - Liteweight and flexible ACL checks
 
 VERSION
-    Version 0.0002
+    Version 0.0003
 
 SYNOPSIS
         use ACL::Lite;
@@ -18,6 +18,19 @@ SYNOPSIS
         unless ($acl->check('baz')) {
             print "Permission denied\n";
         }
+
+        $acl = ACL::Lite->new(uid => 666);
+
+        $acl->check('authenticated');
+
+DESCRIPTION
+    `ACL::Lite' is a simple permission checker without any prerequisites.
+
+    `ACL' stands for "Access Control Lists".
+
+  DEFAULT PERMISSION
+    The default permission depends on whether you pass a `uid'
+    (authenticated) or not (anonymous).
 
 CONSTRUCTOR
   new

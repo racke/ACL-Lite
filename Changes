@@ -1,5 +1,12 @@
 Revision history for ACL::Lite
 
+0.0003 Wed Dec  4 13:13:00 2013 CET
+
+    [API CHANGES]
+
+    * Add default permissions ("authenticated" or "anonymous") depending
+      whether you pass uid or not.
+
 0.0002 Wed May 22 15:57:12 2013 CEST
 
     [BUG FIXES]
