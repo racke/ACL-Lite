@@ -32,6 +32,21 @@ our $VERSION = '0.0002';
         print "Permission denied\n";
     }
 
+    $acl = ACL::Lite->new(uid => 666);
+
+    $acl->check('authenticated');
+
+=head1 DESCRIPTION
+
+C<ACL::Lite> is a simple permission checker without any prerequisites.
+
+C<ACL> stands for "Access Control Lists".
+
+=head2 DEFAULT PERMISSION
+
+The default permission depends on whether you pass a C<uid> (authenticated)
+or not (anonymous).
+
 =head1 CONSTRUCTOR
 
 =head2 new
@@ -94,6 +109,14 @@ sub new {
 			}
 		}
 	}
+
+    # add default permissions
+    if ($self->{uid}) {
+        $self->{permissions}->{authenticated} = 1;
+    }
+    else {
+        $self->{permissions}->{anonymous} = 1;
+    }
 
 	return $self;
 }
