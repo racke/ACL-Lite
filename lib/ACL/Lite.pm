@@ -10,11 +10,11 @@ ACL::Lite - Liteweight and flexible ACL checks
 
 =head1 VERSION
 
-Version 0.0003
+Version 0.0004
 
 =cut
 
-our $VERSION = '0.0003';
+our $VERSION = '0.0004';
 
 =head1 SYNOPSIS
 
