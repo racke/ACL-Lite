@@ -97,7 +97,7 @@ sub new {
 			$self->{volatile} = 1;
 			$self->{sub} = $args{permissions};
 		}
-		else {
+		elsif (defined $args{permissions}) {
 			my @perms;
 
 			for my $perm (split(/$self->{separator}/, $args{permissions})) {
