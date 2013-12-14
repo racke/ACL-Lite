@@ -1,5 +1,11 @@
 Revision history for ACL::Lite
 
+0.0004 Sat Dec 14 10:49:04 2013 CET
+
+    [BUG FIXES]
+
+    * Prevent Perl warning on undefined permissions parameter.
+
 0.0003 Wed Dec  4 13:13:00 2013 CET
 
     [API CHANGES]
